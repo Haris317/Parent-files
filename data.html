@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(./images/Admission.jpeg);
+            background-size: cover;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            background: transparent;
+            backdrop-filter: blur(60px);
+            border: 2px solid rgba(255, 255, 25);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: transparent;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>University Admission Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parent_name">Parent Name:</label>
+                <input type="text" id="parent_name" name="parent_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address_zip">Current Address Zip Code:</label>
+                <input type="text" id="address_zip" name="address_zip" required>
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <input type="text" id="region" name="region" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

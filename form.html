@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(./images/Login\ 2.avif);
+            background-size: cover;
+        }
+        
+        .login-container {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(83, 83, 3);
+            width: 400px;
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, .2);
+            
+        }
+        
+        .login-container h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: poppins;
+            color: #f4f4f4;
+        }
+        
+        .form-group {
+            margin: 10px 0;
+            color: #f4f4f4;
+        }
+        
+        .form-group label {
+            display: block;
+        }
+        
+        .form-group input {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            font-weight: 600;
+            background: transparent;
+            color: #f4f4f4;
+        }
+        
+        .form-group button {
+            width: 100%;
+            background: blueviolet;
+            color: #f4f4f4;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 40px;
+        }
+        .form-group button a{
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: poppins;
+            font-size: 14px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Sign up</h2>
+        <form>
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit"><a href="data.html">Create Account</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
